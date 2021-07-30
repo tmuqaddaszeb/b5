@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>reverse string</title>
+  </head>
+  <body>
+    <h2 style="text-align: center">Reverse the string by decrement loop</h2>
+    <div style="text-align: center">
+      <input type="text" id="enterdata" onkeyup="rstring();" />
+      <input type="text" id="showdata" />
+    </div>
+
+    <script>
+      function rstring() {
+        let st = document.getElementById("enterdata").value;
+
+        var strng = "";
+        for (let i = st.lenght - 1; i >= 0; i--) {
+          strng += st[i];
+        }
+        document.getElementById("showdata").value = strng;
+      }
+    </script>
+  </body>
+</html>
